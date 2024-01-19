@@ -15,11 +15,11 @@ class SearchViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => SearchCubit(SearchRepoImpl(ApiService(Dio()))),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 30),
+      child:const Padding(
+        padding:  EdgeInsets.symmetric(horizontal: 30),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
+          children:  [
             CustomSearchTextField(),
             SizedBox(
               height: 16,

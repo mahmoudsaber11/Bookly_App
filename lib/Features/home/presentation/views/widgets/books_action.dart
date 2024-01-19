@@ -26,7 +26,7 @@ class BookAction extends StatelessWidget {
             borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(16), bottomLeft: Radius.circular(16)),
           )),
-          Expanded(
+          const Expanded(
               child: CustomButton(
             fontSize: 16,
             textColor: Colors.white,

@@ -1,4 +1,3 @@
-import 'package:bookly_app/Features/home/data/model/book_model/book_model.dart';
 import 'package:bookly_app/Features/home/presentation/manger/featured_books_cubit/featured_cubit.dart';
 import 'package:bookly_app/Features/home/presentation/manger/featured_books_cubit/featured_states.dart';
 import 'package:bookly_app/Features/home/presentation/views/widgets/custom_loading_indicator.dart';
@@ -9,7 +8,7 @@ import 'package:go_router/go_router.dart';
 import 'custom_list_view_item.dart';
 
 class FeaturedBooksListView extends StatelessWidget {
-  const FeaturedBooksListView({super.key});
+  const   FeaturedBooksListView({super.key});
 
   @override
   Widget build(BuildContext context) {

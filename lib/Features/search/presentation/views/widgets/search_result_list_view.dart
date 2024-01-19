@@ -2,8 +2,6 @@ import 'package:bookly_app/Features/search/presentation/manger/search_cubit.dart
 import 'package:bookly_app/Features/search/presentation/manger/search_states.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:go_router/go_router.dart';
-
 import '../../../../home/presentation/views/widgets/best_seller_list_view_item.dart';
 import '../../../../home/presentation/views/widgets/custom_loading_indicator.dart';
 
