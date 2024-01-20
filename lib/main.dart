@@ -7,8 +7,8 @@ import 'package:bookly_app/Features/home/presentation/manger/similar_books_cubit
 import 'package:bookly_app/Features/home/presentation/views/book_details_view.dart';
 import 'package:bookly_app/Features/home/presentation/views/home_view.dart';
 import 'package:bookly_app/Features/search/presentation/views/search_view.dart';
-import 'package:bookly_app/constant.dart';
-import 'package:bookly_app/core/utlies/api_service.dart';
+import 'package:bookly_app/core/utils/constant.dart';
+import 'package:bookly_app/core/utils/api_service.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

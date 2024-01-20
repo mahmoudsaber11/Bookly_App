@@ -1,7 +1,7 @@
 import 'package:bookly_app/Features/home/data/model/book_model/book_model.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../core/utlies/styles.dart';
+import '../../../../../core/utils/styles.dart';
 import 'book_rating.dart';
 import 'books_action.dart';
 import 'custom_list_view_item.dart';

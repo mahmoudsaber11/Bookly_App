@@ -1,6 +1,6 @@
 import 'package:bookly_app/Features/home/data/model/book_model/book_model.dart';
 import 'package:bookly_app/Features/home/data/repos/home_repo.dart';
-import 'package:bookly_app/core/utlies/api_service.dart';
+import 'package:bookly_app/core/utils/api_service.dart';
 import 'package:dartz/dartz.dart';
 import 'package:bookly_app/core/errors/failures.dart';
 
@@ -12,8 +12,7 @@ class HomeRepoImpl implements HomeRepo {
   Future<Either<Failure, List<BookModel>>> fetchNewsetBooks() async {
     try {
       var data = await apiService.get(
-          endPoint:
-              'volumes?Filtering=free-ebooks&Sorting=newest &q=film action horror 2022');
+          endPoint: 'volumes?Filtering=free-ebooks&Sorting=newest &q=Dart');
       List<BookModel> books = [];
       for (var item in data['items']) {
         books.add(BookModel.fromJson(item));
@@ -28,7 +27,7 @@ class HomeRepoImpl implements HomeRepo {
   Future<Either<Failure, List<BookModel>>> fetchFeaturedBooks() async {
     try {
       var data = await apiService.get(
-          endPoint: 'volumes?Filtering=free-ebooks&q=film action horror 2022');
+          endPoint: 'volumes?Filtering=free-ebooks&q=programming');
       List<BookModel> books = [];
       for (var item in data['items']) {
         books.add(BookModel.fromJson(item));
@@ -45,7 +44,7 @@ class HomeRepoImpl implements HomeRepo {
     try {
       var data = await apiService.get(
           endPoint:
-              'volumes?Filtering=free-ebooks&Sorting=relevance&q=film action horror 2022');
+              'volumes?Filtering=free-ebooks&Sorting=relevance&q=programming');
       List<BookModel> books = [];
       for (var item in data['items']) {
         books.add(BookModel.fromJson(item));
